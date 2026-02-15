@@ -1,0 +1,32 @@
+#pragma once
+#include "Version.h"
+
+const int STEPPER_DIRECTION_PIN = 32;
+const int STEPPER_STEP_PIN = 33;
+const int STEPPER_ENABLE_PIN = 14;
+#define PIN_STEPPER_MS1        27
+#define PIN_STEPPER_MS2        26
+
+const int GREEN_LED = 18;
+const int BLUE_LED = 19;
+const int RELAY_PIN = 15;
+const int ENDSWITCH_PIN = 12;
+const bool ENDSWITCH_ACTIVE_LOW = true;
+
+const int STEPPER_MICRO_STEPS = 8;
+const int STEPPER_MAX_SPEED = 2500;
+const int STEPPER_MAX_ACCELERATION = 5000;
+const int STEPPER_MAX_CURRENT = 750;
+
+#define STEPPER_SPR 200
+#define WORMGERAR_RATIO 40
+#define STEPPER_STEPS_PER_DEGREE (STEPPER_SPR*STEPPER_MICRO_STEPS*WORMGERAR_RATIO/360.0)
+#define STEPPER_STEPS_FOR_100_DEGREES (STEPPER_STEPS_PER_DEGREE * 100)
+
+#define WIFI_ENABLED 1
+#define WIFI_HOSTNAME "OpenFlatPanel"
+#define WIFI_SSID "Clutchplate"
+#define WIFI_WPAKEY "36FA8A7748"
+
+const unsigned long WIFI_STA_CONNECT_TIMEOUT_MS = 5000;
+const bool WIFI_AP_FALLBACK_ENABLED = true;
