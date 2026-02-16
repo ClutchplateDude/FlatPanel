@@ -18,11 +18,6 @@ SaturnSerial::SaturnSerial()
     {
         _currentCommand[i] = 0;
     }
-
-    for (i = 0; i < SIZE_OUTPUT_BUFFER; i++)
-    {
-        this->_currentReply[i] = 0;
-    }
 }
 
 ///////////////////////////////////////////////////////////////////

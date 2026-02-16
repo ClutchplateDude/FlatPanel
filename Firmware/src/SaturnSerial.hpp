@@ -20,7 +20,6 @@
 #endif
 
 #define SIZE_INPUT_BUFFER  16  // Incoming command buffer size. No command is longer than 16 characters.
-#define SIZE_OUTPUT_BUFFER 8   // Outgoing answer buffer size. No answer is longer than 8 characters.
 
 class SaturnSerial
 {
@@ -42,7 +41,6 @@ class SaturnSerial
   private:
     bool _isCommandAvailable;
     char _currentCommand[SIZE_INPUT_BUFFER];
-    char _currentReply[SIZE_OUTPUT_BUFFER];
     int _readIndex;
 
     void readNewAscii();
